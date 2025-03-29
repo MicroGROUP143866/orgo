@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "5fc8e874aad8b72e54b505ea"
+  },
+  "Name": "Karnataka Red Cross Blood Bank",
+  "Address": "#1/1,KSFC building Thimmaiah Road, Vasantha Nagar Bangalore – 560052",
+  "Blood-Units": {
+    "O+": 30,
+    "O-": 5,
+    "A+": 12,
+    "A-": 4,
+    "B+": 28,
+    "B-": 4,
+    "AB+": 7,
+    "AB-": 2
+  }
+},{
+  "_id": {
+    "$oid": "5fcb15fcaec8c4438a3815f2"
+  },
+  "Name": "Dr. Shivaji Rao’s Blood Bank",
+  "Address": "No.1, KH Road, Lalbagh Road, Bangalore, Karnataka – 560027",
+  "Blood-Units": {
+    "O+": 29,
+    "O-": 6,
+    "A+": 10,
+    "A-": 1,
+    "B+": 20,
+    "B-": 7,
+    "AB+": 4,
+    "AB-": 3
+  }
+},{
+  "_id": {
+    "$oid": "5fcb160daec8c4438a3815f3"
+  },
+  "Name": "Grace Blood Bank",
+  "Address": "1st Floor, Vasantappa ComplexCBI Road, Ganga Nagar, Bengaluru, Karnataka 560032",
+  "Blood-Units": {
+    "O+": 50,
+    "O-": 12,
+    "A+": 14,
+    "A-": 5,
+    "B+": 34,
+    "B-": 13,
+    "AB+": 10,
+    "AB-": 6
+  }
+},{
+  "_id": {
+    "$oid": "5fcb1618aec8c4438a3815f4"
+  },
+  "Name": "Minerva Voluntary Blood Bank",
+  "Address": "# 163, Rajeshwari Complex, Minverva Circle, RV Road, Basavanagudi, Bangalore, 560004",
+  "Blood-Units": {
+    "O+": 23,
+    "O-": 12,
+    "A+": 34,
+    "A-": 6,
+    "B+": 43,
+    "B-": 18,
+    "AB+": 11,
+    "AB-": 5
+  }
+},{
+  "_id": {
+    "$oid": "5fcb1625aec8c4438a3815f5"
+  },
+  "Name": "Navarang Blood Bank",
+  "Address": "2953, 1st FloorMahakavi Kuvempu Rd, Rajajinagar, Bengaluru, Karnataka 560010",
+  "Blood-Units": {
+    "O+": 62,
+    "O-": 12,
+    "A+": 26,
+    "A-": 10,
+    "B+": 31,
+    "B-": 9,
+    "AB+": 16,
+    "AB-": 3
+  }
+},{
+  "_id": {
+    "$oid": "5fcb165b69f0ac7d53a92c66"
+  },
+  "Name": "Naveen Blood Bank",
+  "Address": "2, 4th Block, 30th Cross, Jayanagar 3rd Block, Yediyur, Bengaluru",
+  "Blood-Units": {
+    "O+": 29,
+    "O-": 10,
+    "A+": 7,
+    "A-": 3,
+    "B+": 21,
+    "B-": 8,
+    "AB+": 12,
+    "AB-": 3
+  }
+}]

@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "5fcb54186fcd4906585cc424"
+  },
+  "firstName": "Daniel",
+  "lastName": "Saldanha",
+  "phoneNumber": 9513377329,
+  "mailAddress": "saldanha.dan@gmail.com",
+  "bloodType": "B+",
+  "dateOfBirth": "2001-07-26",
+  "donorType": "Blood Donor",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fcb83456fcd4906585cc429"
+  },
+  "firstName": "John",
+  "lastName": "Oliver",
+  "phoneNumber": 9513377329,
+  "mailAddress": "john_oliver@gmail.com",
+  "bloodType": "B-",
+  "dateOfBirth": "2000-08-19",
+  "donorType": "Orgon Donor",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fce8bc40cea3e0fe42adbdd"
+  },
+  "firstName": "Adina",
+  "lastName": "Fernandes",
+  "phoneNumber": 9578844329,
+  "mailAddress": "adina@gmail.com",
+  "bloodType": "AB+",
+  "dateOfBirth": "1995-06-19",
+  "donorType": "Blood Donor",
+  "__v": 0
+}]

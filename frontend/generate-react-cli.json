@@ -1,0 +1,15 @@
+{
+  "usesTypeScript": false,
+  "usesStyledComponents": true,
+  "testLibrary": "None",
+  "component": {
+    "default": {
+      "path": "src/pages",
+      "withStyle": true,
+      "style":"css",
+      "withTest": false,
+      "withStory": false,
+      "withLazy": false
+    }
+  }
+}

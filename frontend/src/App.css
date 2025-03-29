@@ -1,0 +1,395 @@
+/* Primary Font */
+@font-face{
+  src:url('./fonts/Lato-Regular.ttf');
+  font-family: lato;
+}   
+
+/* Secondary Font */
+@font-face{  
+  src:url('./fonts/Ubuntu-Regular.ttf');
+  font-family: dalton;
+}
+
+/* Basic styling to be followed by the entire website */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+/* LOGO color */
+.accent{
+  color:#ff0000;
+}
+
+
+.navBar{
+  background: #262626;
+  height: 10vh;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 10vh;
+  padding: 0 80px;
+  font-weight: bold;
+}
+
+.navList{
+  float: right;
+  margin-right: 10px;
+}
+
+.navItem{
+  display: inline-block;
+  line-height: 10vh;
+  margin: 0 5px;
+}
+
+.navLink{
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.navLink:hover{
+  color: #ff3333;
+  transition: .5s;
+}
+
+.footer{
+  background-color: black;
+  width: auto;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around; 
+  padding: 20px;
+  bottom:0;
+  position: relative;
+}
+
+.pesLogo{
+  height: 22px ;
+}
+
+.footerSpace{
+  width:1140px;
+}
+
+.footerText{
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.test{
+  height: 600px;
+}
+
+.bgcolor{
+  background-color:  #e6e6e6;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bcard{
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0,0.90);
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  width:700px;
+}
+
+.Homerow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.Homebutton{
+  border-radius: 5px;
+  background-color:#404040;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  width:250px;
+}
+
+.Homebutton:hover{
+  background-color: #ff0000;
+  transition: .5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.slideShow{
+  height:400px ;
+  width: 100%;
+}
+
+.intro{
+  border-radius: 5px;
+  background-color:rgb(64, 64, 64,0.9);
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.bigcard{
+  border-radius: 5px;
+  background-color:rgb(166, 166,166,0.5);
+  color: black;
+  font-size: 25px;
+  padding: 20px;
+ 
+}
+
+.bigcard:hover{
+  background-color: #ff0000;
+  color: white;
+  transition: 1s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.imgcard{
+  height:400px;
+}
+
+.organrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Hoscard{
+  border-radius: 5px;
+  /* background-color: #e6e6e6; */
+  /* border: 5px solid white; */
+  color: black;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.Hoscard2{
+  border-radius: 5px;
+  /* background-color: #e6e6e6; */
+  /* border: 5px solid white; */
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.Hoscard:hover{
+  transition: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.cardimg{
+  height:210px;
+  /* width: 300px; */
+}
+
+.bottom-right {
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.8) ;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  bottom: 8px;
+  right: 16px;
+}
+
+.infotextcard{
+  border-radius: 5px;
+  background-color:rgb(166, 166,166,0.5);
+  color: black;
+  width: 800px;
+  font-size: 20px;
+  padding: 10px;
+  height: 750px
+}
+
+.map{
+  height: 400px;
+  width: 500px;
+}
+
+.donorImg{
+  height: 400px;
+}
+
+.donorcard{
+  border-radius: 10px;
+  background-color: rgba(22, 224, 66, 0.9);
+  color: white;
+  /* color: black; */
+  font-size: 30px;
+  padding: 10px;
+  width:700px;  
+}
+
+.donorcardinfo{
+  border-radius: 10px;
+  text-align: left;
+  /* background-color:rgba(22, 224, 66, 0.6); */
+  /* background-color:rgb(166, 166,166,0.9);
+  /* color: white; */
+  /* color: black; */
+ 
+  background-color:rgb(64, 64, 64,1);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  width:1300px; 
+}
+
+.Donorbutton{
+  border-radius: 5px;
+  background-color:rgba(255, 255, 255, 0.7);
+  /* background-color: white; */
+  /* color: white; */
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px;
+  width:550px;
+  border: 3px solid rgba(22, 224, 66, 0.9) ;
+}
+
+.Donorbutton:hover{
+  background-color:rgba(22, 224, 66, 0.9);
+  transition: 1s;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.formbox{
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  background-color:rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  padding: 10px;
+  width:600px; 
+  /* padding-left: 400px; */
+}
+
+.submitbutton{
+  border-radius: 5px;
+  background-color:rgba(22, 224, 66, 0.85);
+  /* background-color:rgba(255, 255, 255, 0.7); */
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+  border: 3px solid rgba(22, 224, 66, 0.9) ;
+}
+
+.submitbutton:hover{
+  background-color:rgba(22, 224, 66, 0.9);
+  transition: 1s;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.forminput{
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formlabel{
+  font-size: 18px;
+  font-weight: 600;  
+}
+
+.innerBox{
+  padding-left: 80px;
+}
+
+.thankyou{
+  height:600px;
+}
+
+.thankyouBox{
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  background-color:rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  padding: 10px;
+  width:700px;
+}
+
+.smile{
+  height: 300px;
+}
+/* ////////////////// */
+
+
+.dropdown .dropbtn {
+  border: none;
+  background-color: transparent;
+  font-family: inherit; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;  
+  padding: 0px 5px 0px 5px;
+  /* padding: 12px 16px; */
+  /* text-decoration: none; */
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

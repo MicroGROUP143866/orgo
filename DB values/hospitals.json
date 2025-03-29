@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "5fc8e1ddaad8b72e54b505e9"
+  },
+  "Name": "Manipal Hospital",
+  "Address": "98, Old Airport Rd, Kodihalli,  Bangalore, Karnataka 560017",
+  "Specialities": {
+    "Dialysis": "Available",
+    "CT scan": "Available",
+    "Intensive Care": "UnAvailable",
+    "Rheumatology": "Available",
+    "Nephrology": "Available",
+    "Neuropsychology": "Available",
+    "OB-GYN": "Available",
+    "Psychiatry": "Available",
+    "Pulmonology": "Available",
+    "Vascular Medicine": "Available",
+    "Bariatric Surgery": "Available"
+  },
+  "Information": "Manipal Hospitals is a chain of multi-specialty hospitals in India. It is founded by Dr. Tonse Madhav Ananth Pai in 1953,It is part of the Manipal Education system and Medical Group.Its network is spread across 15 locations in India and it also holds an international presence through a branch in Malaysia named Manipal Hospitals Klang."
+},{
+  "_id": {
+    "$oid": "5fca669d35d4e2f492ab31cf"
+  },
+  "Name": "Apollo Hospital",
+  "Address": "Plot No.154/11, Bannerghatta Road, Opposite IIM, Bangalore, Karnataka, 560076",
+  "Specialities": {
+    "Dialysis": "Available",
+    "CT scan": "Available",
+    "Intensive Care": "Available",
+    "Rheumatology": "Available",
+    "Nephrology": "UnAvailable",
+    "Neuropsychology": "Available",
+    "OB-GYN": "Available",
+    "Psychiatry": "UnAvailable",
+    "Pulmonology": "UnAvailable",
+    "Vascular Medicine": "Available",
+    "Bariatric Surgery": "Available"
+  },
+  "Information": "Apollo Hospitals has emerged as Asia’s foremost integrated healthcare services provider and has a robust presence across the healthcare ecosystem, including Hospitals, Pharmacies, Primary Care & Diagnostic Clinics and several retail health models."
+},{
+  "_id": {
+    "$oid": "5fcb1549aec8c4438a3815ee"
+  },
+  "Name": "BGS Global Hospital",
+  "Address": "#67, Uttarahalli Road, Kengeri, Bangalore, Karnataka. Pin Code: 560060",
+  "Specialities": {
+    "Dialysis": "Available",
+    "CT scan": "UnAvailable",
+    "Intensive Care": "Available",
+    "Rheumatology": "UnAvailable",
+    "Nephrology": "Available",
+    "Neuropsychology": "Available",
+    "OB-GYN": "UnAvailable",
+    "Psychiatry": "Available",
+    "Pulmonology": "Available",
+    "Vascular Medicine": "Available",
+    "Bariatric Surgery": "UnAvailable"
+  },
+  "Information": "The BGS Global Hospitals in Bengaluru is a state-of-the-art, NABH facility with expertise in multi-disciplinary tertiary specialties. With over 500-beds, the hospital is one of the largest of its kind in Bengaluru and consists of 14-operation theatres, most advanced imaging facilities and has one of the largest liver ICUs in the country. The hospital caters to several key specialties including oncology, neurosurgery, liver diseases and various others. It brings advanced technologies that drive new and more effective treatments."
+},{
+  "_id": {
+    "$oid": "5fcb1555aec8c4438a3815ef"
+  },
+  "Name": "Fortis Hospital",
+  "Address": "Cunningham Road, Millers Tank Bund Road, Bangalore",
+  "Specialities": {
+    "Dialysis": "UnAvailable",
+    "CT scan": "UnAvailable",
+    "Intensive Care": "Available",
+    "Rheumatology": "Available",
+    "Nephrology": "Available",
+    "Neuropsychology": "Available",
+    "OB-GYN": "UnAvailable",
+    "Psychiatry": "Available",
+    "Pulmonology": "Available",
+    "Vascular Medicine": "UnAvailable",
+    "Bariatric Surgery": "Available"
+  },
+  "Information": "Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities. Currently, the company operates its healthcare delivery services in India, Nepal, Dubai and Sri Lanka with 36 healthcare facilities (including projects under development), approximately 4,000 operational beds and over 415 diagnostics centres."
+},{
+  "_id": {
+    "$oid": "5fcb1561aec8c4438a3815f0"
+  },
+  "Name": "Bowring & Lady Curzon Hospital",
+  "Address": "Near Shivajinagar bus stand Cantonment area, Bangalore",
+  "Specialities": {
+    "Dialysis": "Available",
+    "CT scan": "Available",
+    "Intensive Care": "Available",
+    "Rheumatology": "Available",
+    "Nephrology": "Available",
+    "Neuropsychology": "Available",
+    "OB-GYN": "Available",
+    "Psychiatry": "UnAvailable",
+    "Pulmonology": "UnAvailable",
+    "Vascular Medicine": "Available",
+    "Bariatric Surgery": "Available"
+  },
+  "Information": "Bowring and Lady Curzon Hospital is a multispeciality hospital, located in the heart of Bangalore City, at Shivajinagar. The hospital is over 100 years old ,approx 2 kms towards east of Vidhana Soudha. The architecture of the  buildings are of modern as well as that of the yester years. Bowring Hospital was established in 1867 for men and Lady Curzon Hospital was established in 1890 for women and children. Lewis Bentham Bowring was the chief commissioner of Mysore and Coorg from 1862 to 1870. Lady Victoria Curzon is the wife of Lord Curzon , who was  Viceroy 1899-1905."
+},{
+  "_id": {
+    "$oid": "5fcb156aaec8c4438a3815f1"
+  },
+  "Name": "Central Leprosorium",
+  "Address": "Near Binny Mill, 1st Cross, Magadi Road, Behind City Railway Station, Bangalore – 560023",
+  "Specialities": {
+    "Dialysis": "Available",
+    "CT scan": "UnAvailable",
+    "Intensive Care": "Available",
+    "Rheumatology": "UnAvailable",
+    "Nephrology": "Available",
+    "Neuropsychology": "Available",
+    "OB-GYN": "UnAvailable",
+    "Psychiatry": "UnAvailable",
+    "Pulmonology": "Available",
+    "Vascular Medicine": "Available",
+    "Bariatric Surgery": "Available"
+  },
+  "Information": "In Bangalore, Central Leprosorium Hospital is a recognized name in patient care. They are one of the well-known Hospitals in Magadi Road. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities, they are one of the upcoming names in the healthcare industry. Located in , this hospital is easily accessible by various means of transport. A team of well-trained medical staff, non-medical staff and experienced clinical technicians work round-the-clock to offer various services ."
+}]
