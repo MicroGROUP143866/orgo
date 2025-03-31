@@ -7,9 +7,9 @@ function Footer(){
         <>
         <footer class="footer">    
         
-        <img src={PESU} class="pesLogo" alt="Pes University"></img>        
+                
         <div class="footerSpace"></div>
-        <p class="footerText">DEPARTMENT OF CSE</p>
+       
         </footer>
         </>
     );

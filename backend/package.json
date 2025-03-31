@@ -4,7 +4,8 @@
   "description": "This is a backend for the react project OAS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [
     "backend"
@@ -12,13 +13,17 @@
   "author": "Daniel Lester Saldanha",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^1.8.4",
+    "body-parser": "^2.2.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "mongodb": "^3.6.3",
-    "mongoose": "^5.11.2",
+    "mongoose": "^8.13.1",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.6",
+    "mysql2": "^3.14.0",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
     "path": "^0.12.7",
     "react-router-dom": "^5.2.0",
     "routes": "^2.1.0"

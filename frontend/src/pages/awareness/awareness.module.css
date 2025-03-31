@@ -1,0 +1,19 @@
+
+.awareness {
+    margin: 50px auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%; 
+    text-align: center; 
+}
+/*.awareness {
+    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}*/

@@ -1,116 +1,72 @@
-const express=require('express');
-const router=express.Router();
-const mongoose = require('mongoose');
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
+const router = express.Router();
 
-// Schemas for different collections in the database
-const hospitalSchema=mongoose.Schema({
-    Name:{
-        type:String,
-        require:true
-    },
-    Address:{
-        type:String,
-        require:true
-    },
-    Information:{
-        type:String,
-        require:true
-    }
-});
-const bloodBankSchema=mongoose.Schema({
-    Name:{
-        type:String,
-        require:true
-    },
-    Address:{
-        type:String,
-        require:true
-    }
-});
-const donorSchema=mongoose.Schema({
-    firstName:{
-        type:String,
-        require:true
-    },
-    lastName:{
-        type:String,
-        require:true
-    },
-    phoneNumber:{
-        type:Number,
-        require:true
-    },
-    mailAddress:{
-        type:String,
-        require:true
-    },
-    bloodType:{
-        type:String,
-        require:true
-    },
-    dateOfBirth:{
-        type:String,
-        require:true
-    },
-    donorType:{
-        type:String,
-        require:true
-    }
-});
+// File paths for JSON data
+const DB_PATH = path.join(__dirname, '../database');
+const FILES = {
+    hospitals: path.join(DB_PATH, 'hospitals.json'),
+    bloodbanks: path.join(DB_PATH, 'bloodbanks.json'),
+    donors: path.join(DB_PATH, 'donors.json')
+};
 
-const hospitalCollection=mongoose.model('hospitals',hospitalSchema);
-const bloodBankCollection=mongoose.model('bloodbanks',bloodBankSchema);
-const donorCollection=mongoose.model('donors',donorSchema);
+// Helper function to read JSON file
+const readData = (filePath) => {
+    try {
+        if (!fs.existsSync(filePath)) return [];
+        return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    } catch (error) {
+        console.error(`Error reading file ${filePath}:`, error);
+        return [];
+    }
+};
 
-// GET Functions for all the collections 
+// Helper function to write JSON data
+const writeData = (filePath, data) => {
+    try {
+        fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    } catch (error) {
+        console.error(`Error writing file ${filePath}:`, error);
+    }
+};
+
+// ✅ GET: Fetch all hospitals
 router.get('/hospitals', (req, res) => {
-    hospitalCollection.find({  })
-        .then((data) => {
-            console.log('Hospital Data: ', data);
-            res.json(data);
-        })
-        .catch((error) => {
-            console.log('error: ', daerrorta);
-        });
+    const hospitals = readData(FILES.hospitals);
+    res.json(hospitals);
 });
 
+// ✅ GET: Fetch all blood banks
 router.get('/bloodbanks', (req, res) => {
-    bloodBankCollection.find({  })
-        .then((data) => {
-            console.log('Hospital Data: ', data);
-            res.json(data);
-        })
-        .catch((error) => {
-            console.log('error: ', daerrorta);
-        });
+    const bloodbanks = readData(FILES.bloodbanks);
+    res.json(bloodbanks);
 });
 
+// ✅ GET: Fetch all donors
 router.get('/donors', (req, res) => {
-    donorCollection.find({  })
-        .then((data) => {
-            console.log('Hospital Data: ', data);
-            res.json(data);
-        })
-        .catch((error) => {
-            console.log('error: ', daerrorta);
-        });
+    const donors = readData(FILES.donors);
+    res.json(donors);
 });
 
-// Post function for registering donors
+// ✅ POST: Register a new donor
 router.post('/register', (req, res) => {
-    const data = req.body;
+    const { firstName, lastName, phoneNumber, mailAddress, bloodType, dateOfBirth, donorType } = req.body;
+    
+    // Validate required fields
+    if (!firstName || !lastName || !phoneNumber || !mailAddress || !bloodType || !dateOfBirth || !donorType) {
+        return res.status(400).json({ error: "All fields are required!" });
+    }
 
-    const newBlogPost = new donorCollection(data);
+    const donors = readData(FILES.donors);
 
-    newBlogPost.save((error) => {
-        if (error) {
-            res.status(500).json({ msg: 'Internal server errors' });
-            return;
-        }
-        return res.json({
-            msg: 'Your data has been saved'
-        });
-    });
+    // Create new donor entry
+    const newDonor = { firstName, lastName, phoneNumber, mailAddress, bloodType, dateOfBirth, donorType };
+    donors.push(newDonor);
+
+    writeData(FILES.donors, donors);
+
+    res.json({ msg: '✅ Donor registered successfully!', donor: newDonor });
 });
 
-module.exports=router;
+module.exports = router;

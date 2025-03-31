@@ -21,6 +21,13 @@
   
 }
 
+.slideshowhome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:1px 20px;
+}
+
 /* LOGO color */
 .accent{
   color:#ff0000;
@@ -392,4 +399,15 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.info-container {
+  text-align: center; /* Centers text below images */
+  margin: 10px; /* Adds spacing between elements */
+}
+
+.hospital-name {
+  font-size: 14px; /* Adjusts text size */
+  font-weight: bold;
+  margin-top: 5px; /* Adds space between image and text */
+  text-align:center;
 }

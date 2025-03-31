@@ -9,6 +9,7 @@ function Button(props){
                 <p>{props.text}</p>
             </div>
         </Link>
+       
     );
 }
 

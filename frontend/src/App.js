@@ -11,6 +11,7 @@ import Reg from './pages/registration';
 import Thankyou from './pages/thankyou';
 import {Route,BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
+import awareness from './pages/awareness/awareness';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/bloodbank-info" component={BloodBankInfo}/>
             <Route path="/registration" component={Reg}/>
             <Route path="/thankyou" component={Thankyou}/>
+            <Route path="/awareness" component={awareness}/>
           </div>
           <Footer></Footer>
         </Router>

@@ -9,6 +9,7 @@ function Nav(){
                 <a href="/"><span class="logo">ORGO</span></a>
                 <ul class="navList">
                     <li class="navItem"><Link to="/" class="navLink">Home</Link></li>
+                    <li class="navItem"><Link to="/awareness" class="navLink">Awareness</Link></li>
                     <li class="navItem">
                         <div class="dropdown">
                             <button class="dropbtn">
@@ -20,10 +21,11 @@ function Nav(){
                             <div class="dropdown-content">
                                 <Link to="/hospitals">Hospitals</Link>
                                 <Link to="/blood-banks">Blood Banks</Link>
+                                <a href = 'https://ksotto.kerala.gov.in/'>Register</a>
                             </div>
                         </div>
                     </li>
-                    <li class="navItem"><Link to="/become-a-donor" class="navLink">Become a Donor</Link></li>
+                    <li class="navItem"><Link to="/registration" class="navLink">Contact Us</Link></li>
                 </ul>
             </nav>
         );

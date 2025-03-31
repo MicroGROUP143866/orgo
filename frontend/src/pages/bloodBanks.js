@@ -1,21 +1,12 @@
 import React from 'react';
 import InfoCard from '../components/infocard';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 // Images for Blood Banks
-import image1 from '../images/bloodbanks/default.jpg';
-import image2 from '../images/bloodbanks/DrShivajiRaoBloodBank.jpg';
-import image3 from '../images/bloodbanks/GraceBloodBanks.jpg';
-import image4 from '../images/bloodbanks/default.jpg';
-import image5 from '../images/bloodbanks/NavrangBloodBank.jpg';
-import image6 from '../images/bloodbanks/default.jpg';
-// Maps for Blood Banks
-import map1 from '../images/bloodbanks/maps/KarnatakaRedCrossBloodBankMap.jpg';
-import map2 from '../images/bloodbanks/maps/defaultMap.jpg';
-import map3 from '../images/bloodbanks/maps/GraceBloodBankMap.jpg';
-import map4 from '../images/bloodbanks/maps/MinervaBloodBankMap.jpg';
-import map5 from '../images/bloodbanks/maps/NavrangBloodBankMap.jpg';
-import map6 from '../images/bloodbanks/maps/NaveenBloodBankMap.jpg';
+import image1 from '../images/bloodbanks/amritabb.jpg';
+import image2 from '../images/bloodbanks/imabb.jpg';
+import image3 from '../images/bloodbanks/renaibb.jpg';
+
 
 import '../App';
 
@@ -57,79 +48,35 @@ class BloodBanks extends React.Component{
             {this.setData(this.state.posts)}
             <br></br>
             <div class="row">
-                <Link to={{
-                  pathname:'/bloodbank-info',
-                  aboutProps:{
-                    data:this.state.posts[0],
-                    image:image1,
-                    map:map1
-                  }
-                }}
-                >
-                  <InfoCard  image={image1} name={bloodbanks[0]}/>
-                </Link>
+  <div class="info-container">
+    <a href="https://www.amrita.edu/tag/amrita-institute-of-medical-sciences-research-center/">
+      <InfoCard image={image1} name={bloodbanks[0]} />
+    </a>
+    <p class="hospital-name">AMRITA{bloodbanks[0]}</p> 
+  </div>
 
-                <Link to={{
-                  pathname:'/bloodbank-info',
-                  aboutProps:{
-                    data:this.state.posts[1],
-                    image:image2,
-                    map:map2
-                  }
-                }}
-                >
-                  <InfoCard image={image2} name={bloodbanks[1]}/>
-                </Link>
+  <div class="info-container">
+    <a href="https://imacochin.org/blood-bank.php">
+      <InfoCard image={image2} name={bloodbanks[1]} />
+    </a>
+    <p class="hospital-name">IMA{bloodbanks[1]}</p> 
+  </div>
 
-                <Link to={{
-                  pathname:'/bloodbank-info',
-                  aboutProps:{
-                    data:this.state.posts[2],
-                    image:image3,
-                    map:map3
-                  }
-                }}
-                >
-                  <InfoCard image={image3} name={bloodbanks[2]}/>
-                </Link>
-            </div>
+  <div class="info-container">
+    <a href="https://www.renaimedicity.org/facilities/blood-bank-and-donation/">
+      <InfoCard image={image3} name={bloodbanks[2]} />
+    </a>
+    <p class="hospital-name">RENAI{bloodbanks[2]}</p> 
+  </div>
+</div>
+
             <br></br>
             <div class="row">
-            <Link to={{
-                  pathname:'/bloodbank-info',
-                  aboutProps:{
-                    data:this.state.posts[3],
-                    image:image4,
-                    map:map4
-                  }
-                }}
-                >
-                  <InfoCard image={image4} name={bloodbanks[3]}/>
-                </Link>
+   
 
-                <Link to={{
-                  pathname:'/bloodbank-info',
-                  aboutProps:{
-                    data:this.state.posts[4],
-                    image:image5,
-                    map:map5
-                  }
-                }}
-                >
-                  <InfoCard image={image5} name={bloodbanks[4]}/>
-                </Link>
+               
 
-                <Link to={{
-                  pathname:'/bloodbank-info',
-                  aboutProps:{
-                    data:this.state.posts[5],
-                    image:image6,
-                    map:map6
-                  }
-                }}
-                >
-                  <InfoCard image={image6} name={bloodbanks[5]}/>
-                </Link>
+               
             </div>
             <br></br><br></br>
         </>
